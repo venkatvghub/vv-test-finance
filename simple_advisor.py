@@ -97,7 +97,7 @@ def call_openrouter(prompt):
 # =====================
 # Streamlit UI
 # =====================
-st.title("💰 Goal-based Indian Financial Advisor 
+st.title("💰 Goal-based Indian Financial Advisor")
 
 # Inputs
 age = st.number_input("Your Age", min_value=18, max_value=100, step=1)
