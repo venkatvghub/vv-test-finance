@@ -7,9 +7,9 @@ import time
 # =====================
 # OpenRouter Configuration
 # =====================
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = st.secrets.get("OPENROUTER_API_KEY")
 if not OPENROUTER_API_KEY:
-    st.error("OpenRouter API Key not found. Set OPENROUTER_API_KEY as an environment variable.")
+    st.error("OpenRouter API Key not found. Add it to .streamlit/secrets.toml.")
     st.stop()
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
